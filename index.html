@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Socials</title>
+
+<style>
+  :root {
+    --glass-bg: rgba(255, 255, 255, 0.14);
+    --glass-border: rgba(255, 255, 255, 0.28);
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+
+  body {
+    margin: 0;
+    min-height: 100vh;
+    font-family: -apple-system, BlinkMacSystemFont, system-ui, sans-serif;
+    color: white;
+    background:
+      linear-gradient(rgba(0,0,0,0.35), rgba(0,0,0,0.35)),
+      url("https://images.unsplash.com/photo-1433024730544-5f8e3e2cc6c8?q=80&w=774&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .container {
+    width: 100%;
+    max-width: 420px;
+    padding: 32px 20px 40px;
+  }
+
+  .glass {
+    background: var(--glass-bg);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid var(--glass-border);
+    border-radius: 22px;
+  }
+
+  /* Profile */
+  .profile {
+    text-align: center;
+    margin-bottom: 32px;
+  }
+
+  .avatar {
+    width: 96px;
+    height: 96px;
+    border-radius: 50%;
+    margin: 0 auto 12px;
+    background:
+      url("IMG_0468.jpeg")
+      center / cover no-repeat;
+  }
+
+  .name {
+    font-size: 22px;
+    font-weight: 600;
+  }
+
+  .bio {
+    font-size: 14px;
+    opacity: 0.9;
+    margin-top: 4px;
+  }
+
+  /* Links */
+  .links {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+  }
+
+  .link {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    padding: 14px 18px;
+    text-decoration: none;
+    color: white;
+    transition: transform 0.15s ease, background 0.15s ease;
+  }
+
+  .link:hover {
+    transform: scale(1.03);
+    background: rgba(255,255,255,0.2);
+  }
+
+  .icon {
+    width: 26px;
+    height: 26px;
+    flex-shrink: 0;
+  }
+
+  .label {
+    font-size: 16px;
+    font-weight: 500;
+  }
+
+</style>
+</head>
+
+<body>
+
+<div class="container">
+  <div class="profile">
+    <div class="avatar"></div>
+    <div class="name">Goga Davide</div>
+    <div class="bio">🇮🇹 🇷🇴 ✝</div>
+  </div>
+
+    <div class="links">
+    <a href="https://www.instagram.com/goga.davide" class="link glass">
+      <img class="icon" src="https://cdn.simpleicons.org/instagram/ffffff" alt="Instagram">
+      <span class="label">Instagram</span>
+    </a>
+    
+    <a href="https://www.tiktok.com/@davide7654" class="link glass">
+      <img class="icon" src="https://cdn.simpleicons.org/tiktok/ffffff" alt="TikTok">
+      <span class="label">TikTok</span>
+    </a>
+</div>
+
+    
+  </div>
+</div>
+
+</body>
+</html>
