@@ -72,70 +72,36 @@
     margin-top: 4px;
   }
 
-  /* Socials */
-  .socials {
+  /* Links */
+  .links {
     display: flex;
-    justify-content: center;
-    gap: 16px;
-    margin-top: 20px;
-  }
-
-  .social-icon {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 48px;
-    height: 48px;
-    border-radius: 50%;
-    border: 1px solid var(--glass-border);
-    background: transparent;
-    transition: transform 0.15s ease, background 0.15s ease;
-  }
-
-  .social-icon:hover {
-    transform: scale(1.08);
-    background: rgba(255,255,255,0.14);
-  }
-
-  .social-icon img {
-    width: 22px;
-    height: 22px;
-  }
-
-  /* Grid */
-  .grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    flex-direction: column;
     gap: 14px;
   }
 
-  .grid-card {
+  .link {
     display: flex;
-    flex-direction: column;
     align-items: center;
-    gap: 10px;
-    padding: 20px 14px;
+    gap: 14px;
+    padding: 14px 18px;
     text-decoration: none;
     color: white;
-    text-align: center;
     transition: transform 0.15s ease, background 0.15s ease;
   }
 
-  .grid-card:hover {
+  .link:hover {
     transform: scale(1.03);
     background: rgba(255,255,255,0.2);
   }
 
-  .grid-icon {
-    width: 40px;
-    height: 40px;
-    border-radius: 12px;
+  .icon {
+    width: 26px;
+    height: 26px;
     flex-shrink: 0;
-    object-fit: cover;
   }
 
-  .grid-label {
-    font-size: 14px;
+  .label {
+    font-size: 16px;
     font-weight: 500;
   }
 
@@ -148,34 +114,20 @@
   <div class="profile glass">
     <div class="avatar"></div>
     <div class="name">Goga Davide</div>
-    <div class="bio">Roblox Game Developer<br>Let's connect!<br>✝️</div>
-
-    <div class="socials">
-    <a href="https://www.instagram.com/goga.davide" class="social-icon" title="Instagram">
-      <img src="https://cdn.simpleicons.org/instagram/ffffff" alt="Instagram">
-    </a>
-
-    <a href="https://discord.com/users/697103917238190102" class="social-icon" title="Business Inquiries (Discord)">
-      <img src="https://cdn.simpleicons.org/discord/ffffff" alt="Discord">
-    </a>
-
-    <a href="mailto:davide.goga@gmail.com" class="social-icon" title="Business Inquiries (Gmail)">
-      <img src="https://cdn.simpleicons.org/gmail/ffffff" alt="Gmail">
-    </a>
-    </div>
+    <div class="bio">let's connect below</div>
   </div>
 
-  <div class="grid">
-    <a href="https://www.roblox.com/games/118055952211055/Hack-A-Business" class="grid-card glass">
-      <img class="grid-icon" src="https://cdn.simpleicons.org/roblox/ffffff" alt="Roblox">
-      <span class="grid-label">Play my Latest Game</span>
+    <div class="links">
+    <a href="https://discord.com/users/697103917238190102" class="link glass">
+      <img class="icon" src="https://cdn.simpleicons.org/discord/ffffff" alt="Discord">
+      <span class="label">Business Inquiries (Discord)</span>
     </a>
 
-    <a href="https://www.roblox.com/communities/287664347/Matthew-7-7" class="grid-card glass">
-      <img class="grid-icon" src="https://cdn.simpleicons.org/roblox/ffffff" alt="Roblox">
-      <span class="grid-label">Join My Community</span>
+    <a href="mailto:davide.goga@gmail.com" class="link glass">
+      <img class="icon" src="https://cdn.simpleicons.org/gmail/ffffff" alt="Gmail">
+      <span class="label">Business Inquiries (Gmail)</span>
     </a>
-  </div>
+</div>
 </div>
 
 </body>
