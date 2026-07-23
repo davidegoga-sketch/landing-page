@@ -46,8 +46,21 @@
 
   /* Profile */
   .profile {
+    position: relative;
     text-align: center;
     margin-bottom: 32px;
+    padding: 36px 24px;
+    overflow: hidden;
+  }
+
+  .profile::before {
+    content: "";
+    position: absolute;
+    inset: -40%;
+    z-index: -1;
+    background: conic-gradient(from 180deg, #ff6b6b, #ffd93d, #6bcbef, #a06bff, #ff6b6b);
+    filter: blur(60px);
+    opacity: 0.55;
   }
 
   .avatar {
@@ -110,7 +123,7 @@
 <body>
 
 <div class="container">
-  <div class="profile">
+  <div class="profile glass">
     <div class="avatar"></div>
     <div class="name">Goga Davide</div>
     <div class="bio">game developer 🇮🇹 🇷🇴 ✝</div>
